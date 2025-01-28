@@ -9,14 +9,14 @@ def main():
             'MUSHROOM',
             'GREEN_PEPPER'
         ],
-        'movies' : [
+        'movies': [
             {
                 'title' : 'Avengers Endgame',
-                'genre' : 'Suspense'                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       '
+                'genre' : 'Suspense                                                                                                                                                                              '
             },
             {
-                'tile' : 'Intersellar',
-                'genre' : 'Mystery' 
+                'title' : 'Intersteller',
+                'genre' : 'Mystery'
             }
         ]
     }
@@ -27,10 +27,10 @@ def main():
                 'genre' : 'Action' 
             }
     about_me['movies'].append(new_movie)
-    print(movies) # Temporary debug print
+    print(movies) # type: ignore # Temporary debug print
 
 # TODO: Step 4 - Function that prints student name and ID	
-def print_student_name_and_id(about_me)
+def print_student_name_and_id(about_me):
     name = about_me['name']
     first_name = name.split()[0]
     student_id = about_me['student_id']
