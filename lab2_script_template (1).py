@@ -44,11 +44,16 @@ def add_pizza_toppings(about_me, toppings):
     lowercase_toppings = []
     for topping in about_me['pizza_toppings']:
         lowercase_toppings.append(topping.lower())
-    about_me['piiza_toppings'].sort(lowercase_toppings)
+    about_me['pizza_toppings'] = sorted(lowercase_toppings)
     return
 
 # TODO: Step 6 - Function that prints bullet list of pizza toppings
 def print_pizza_toppings(about_me):
+    print("my favourite pizza toppings are:")
+    toppings = about_me['pizza_toppings']
+    for topping in toppings:
+        formatted_topping = topping.capitalize()
+        print(f"- {formatted_topping}")
     return
 
 # TODO: Step 7 - Function that prints comma-separated list of movie genres
